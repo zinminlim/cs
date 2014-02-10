@@ -1,11 +1,22 @@
 package com.zin.tree;
 
+import org.StructureGraphic.v1.*;
+
+import java.applet.Applet;
+import java.awt.*;
+import java.awt.geom.*;
 /**
  * Created by zlim on 2/9/14.
  */
-public class BinaryTreeMain {
+public class BinaryTreeMain extends Applet{
     public static void main (String[] args){
         System.out.println("hello");
+        //Node binaryTree = buildBinaryTree();
+        //binaryTree.
+         //paint(binaryTree);
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.printTree();
+
     }
 
 
@@ -13,18 +24,5 @@ public class BinaryTreeMain {
 
 
 
-    private Node buildBinaryTree(){
-        Node root = new Node(5);
-        Node ch1 = new Node(3);
-        Node ch2 = new Node(6);
-        Node ch3 = new Node(1);
-        Node ch4 = new Node(4);
 
-        root.setLeftChild(ch1);
-        root.setRightChild(ch2);
-
-        ch1.setLeftChild(ch3);
-        ch1.setRightChild(ch4);
-        return root;
-    }
 }
